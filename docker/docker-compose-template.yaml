@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  tm_TM:
+    container_name: tm_TM
+    hostname: tm_TM
+    extends:
+      file: base.yaml
+      service: tm-base
+    ports:
+      - PORT:26657
+    volumes:
+      - ../artifacts/TM:/tendermint
+    command: 
+      - /bin/sh
+      - -c
+      - |
+        nohup ./ABCI_NAME &
+        tendermint node
