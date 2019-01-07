@@ -9,7 +9,7 @@ If you need more functions, change it and use it as your style.
 
 ## usage
 ```
-docker push hundred666/tendermint:0.27.3
+docker pull hundred666/tendermint:0.27.3
 git clone https://github.com/hundredwz/Tendermint_deploy.git
 cd Tendermint_deploy-master
 ./network.sh -m up
