@@ -11,7 +11,7 @@ If you need more functions, change it and use it as your style.
 ```
 docker pull hundred666/tendermint:v0.27.3
 git clone https://github.com/hundredwz/Tendermint_deploy.git
-cd Tendermint_deploy-master
+cd Tendermint_deploy
 ./network.sh -m up
 ```
 
